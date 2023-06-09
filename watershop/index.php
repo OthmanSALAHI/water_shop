@@ -1,20 +1,22 @@
 <?php
 require 'config.php';
 
-$message = '';
+$message = '';//the init of error message
 
-if(isset($_POST["submit"])){
+if(isset($_POST["submit"])){//the condition of the button submit
     $ID = $_POST["id"];
     $fullname = $_POST["fullname"];
     $phone = $_POST["phone"];
+    //returning the inputs
     $sql = "INSERT INTO clients VALUES ('$ID','$fullname','$phone')";
     $result = mysqli_query($con, $sql);
+    //lunching sql code
     if($result){
-        header("location:user.php");
+        header("location:user.php");//checking the result of sql code
     }else{
-        $message = "Erreur d'ajouters";
+        $message = "Erreur d'ajouters";//error message
         if(mysqli_errno($con) == 1062) {
-            $message = "L'ID '$ID' existe déjà dans la base de données.";
+            $message = "L'ID '$ID' existe déjà dans la base de données.";//the message of error
         }
     }
 }

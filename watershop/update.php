@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) == 0) {
     exit();
 }
 
-$user = mysqli_fetch_assoc($result);
+$user = mysqli_fetch_assoc($result);//making the result of sql to table
 
 if(isset($_POST['submit'])){
     $fullname = $_POST['fullname'];
@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
     if(!$result){
         die("Query failed: " . mysqli_error($con));
     }
-    header('Location: user.php?update=success');
+    header('Location: user.php?update=success');//query string with message 
     exit();
 }
 ?>

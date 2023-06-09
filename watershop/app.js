@@ -1,6 +1,6 @@
 var phone = document.querySelector('#phone');
 var btnAjouter = document.querySelector('#btnAjouter');
-
+//checking input length
 phone.addEventListener("input", function(event) {
     if (event.target.value.length < 10) {
         btnAjouter.disabled = true;
@@ -15,6 +15,7 @@ phone.addEventListener("input", function(event) {
 });
 function colorinput(i)
 {
+	//useless function
     if(i.target.value.length <= 10){
         phone.style.color = "red";
     }
