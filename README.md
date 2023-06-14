@@ -6,8 +6,8 @@ ___the main pages___
 - 2- Page user:
    [user.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/user.php)
 - 3- Page update:
-   [index.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/update.php)
+   [update.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/update.php)
 - 4- Page delete:
-   [user.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/delete.php)
-- 5- Page delete:
-   [user.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/config.php)
+   [delete.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/delete.php)
+- 5- Page config:
+   [config.php](https://github.com/OthmanSALAHI/water_shop/blob/master/watershop/config.php)
